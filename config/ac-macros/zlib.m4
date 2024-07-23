@@ -75,7 +75,7 @@ case $SYSTEM_TYPE in
     ;;
   *)
     AC_ARG_WITH([zlib-dir],
-                AC_HELP_STRING([--with-zlib-dir=no|bundled|DIR],
+                AS_HELP_STRING([--with-zlib-dir=no|bundled|DIR],
                                [Provide MySQL with a custom location of
                                compression library. Given DIR, zlib binary is 
                                assumed to be in $DIR/lib and header files

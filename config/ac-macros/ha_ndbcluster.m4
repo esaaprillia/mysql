@@ -21,7 +21,7 @@ AC_SUBST(MAKEINDEX)
 
 AC_DEFUN([MYSQL_CHECK_NDB_OPTIONS], [
   AC_ARG_WITH([ndb-sci],
-              AC_HELP_STRING([--with-ndb-sci=DIR],
+              AS_HELP_STRING([--with-ndb-sci=DIR],
                              [Provide MySQL with a custom location of
                              sci library. Given DIR, sci library is 
                              assumed to be in $DIR/lib and header files
@@ -78,7 +78,7 @@ AC_DEFUN([MYSQL_CHECK_NDB_OPTIONS], [
               [ndb_debug="$withval"],
               [ndb_debug="default"])
   AC_ARG_WITH([ndb-ccflags],
-              AC_HELP_STRING([--with-ndb-ccflags=CFLAGS],
+              AS_HELP_STRING([--with-ndb-ccflags=CFLAGS],
                            [Extra CFLAGS for ndb compile]),
               [ndb_ccflags=${withval}],
               [ndb_ccflags=""])
