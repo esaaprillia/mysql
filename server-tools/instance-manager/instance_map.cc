@@ -526,12 +526,12 @@ int Instance_map::load()
              Options::Main::config_file);
 
     argv_options[1]= defaults_file_arg;
-    argv_options[2]= '\0';
+    argv_options[2]= NULL;
 
     argc= 2;
   }
   else
-    argv_options[1]= '\0';
+    argv_options[1]= NULL;
 
   /*
     If the routine failed, we'll simply fallback to defaults in
